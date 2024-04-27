@@ -24,7 +24,7 @@ def convert_markdown_to_html(markdown_file, output_file):
     try:
         with open(markdown_file, 'r') as md_file:
             markdown_text = md_file.read()
-            markdown_text = re.sub(r'\[\[(.*?)\]\]', lambda match: hashlib.md5(match.group(1).encode()).hexdigest(), markdown_text)
+            markdown_text = re.sub(r'\[\[(.*?)\]\]', lambda match: f"<b>{match.group(1)}</b>", markdown_text)
             markdown_text = re.sub(r'\(\((.*?)\)\)', lambda match: match.group(1).replace('c', '').replace('C', ''), markdown_text)
             html_content = markdown.markdown(
                 markdown_text,
