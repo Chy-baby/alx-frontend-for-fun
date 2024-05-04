@@ -1,0 +1,20 @@
+/* Image inside post */
+.post-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* First child of paragraphs inside post-content */
+.post-content p:first-child {
+    font-size: var(--font-size-x-large);
+}
+
+/* Image caption inside post-content */
+.post-content .img-caption {
+    margin: 1rem 0;
+    padding: 0 .5rem;
+    font-size: var(--font-size-small);
+    color: var(--color-grey, #a0a0a0);
+    text-align: center;
+}
+

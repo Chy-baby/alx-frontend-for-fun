@@ -1,0 +1,29 @@
+/* Section HERO section */
+.section-hero {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 0; /* Add padding to the section, not to the inner div */
+}
+
+.section-hero .section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 0; /* Remove the padding */
+}
+
+.section-hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.section-hero p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+

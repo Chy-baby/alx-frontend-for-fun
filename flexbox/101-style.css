@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.box:nth-child(odd) {
+    background-color: #ffcc00; /* Custom color for odd boxes */
+}
+
+.box:nth-child(even) {
+    background-color: #ff6666; /* Custom color for even boxes */
+}
+

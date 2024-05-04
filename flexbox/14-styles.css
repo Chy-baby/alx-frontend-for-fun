@@ -1,0 +1,36 @@
+/* Share social icons */
+.post-share {
+    text-align: center;
+}
+
+.social-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social-nav li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.social-nav a {
+    color: #333; /* Change color as needed */
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-nav a:hover {
+    color: #007bff; /* Change color as needed */
+}
+
+/* Screen reader only text */
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+

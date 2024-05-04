@@ -1,0 +1,17 @@
+/* Navbar section */
+nav {
+    display: flex;
+}
+
+.nav .nav-item {
+    /* display: inline-block; */ /* Remove this line */
+}
+
+.nav .nav-item + .nav-item {
+    margin-left: 2rem; /* Move the margin declaration */
+}
+
+/* Variables */
+/* Change the value of nav-item-margin */
+/* $nav-item-margin: 0 0 0 2rem; */
+

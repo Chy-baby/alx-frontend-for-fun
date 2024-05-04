@@ -1,0 +1,26 @@
+/* Header section */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+}
+
+/* Navbar section */
+nav {
+    display: flex;
+}
+
+.nav .nav-item {
+    /* display: inline-block; */ /* Remove this line */
+}
+
+.nav .nav-item + .nav-item {
+    margin-left: 2rem; /* Move the margin declaration */
+}
+

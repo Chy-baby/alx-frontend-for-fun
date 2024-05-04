@@ -1,0 +1,11 @@
+/* Section ABOUT US section */
+.section-about-us {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section-about-us [class*='col-'] {
+    align-self: center; /* Align columns vertically center */
+}
+

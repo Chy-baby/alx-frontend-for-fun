@@ -1,0 +1,31 @@
+/* Header section */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Removing header-logo and navbar-menu rules */
+/* .header-logo {
+    float: left;
+}
+
+.header-logo a {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-menu {
+    float: right;
+} */
+
+/* Variables */
+/* Remove the variables related to header-logo */
+

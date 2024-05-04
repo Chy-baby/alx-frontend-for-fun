@@ -1,0 +1,18 @@
+/* Post ============================= */
+.main-article {
+    padding: 5rem 0;
+}
+
+.post {
+    display: flex;
+}
+
+.post-content {
+    width: 100%;
+}
+
+.post-aside {
+    order: -1;
+    min-width: 20%;
+}
+
