@@ -1,0 +1,15 @@
+/* Target all label */
+label {
+    cursor: pointer;
+    display: block;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    padding: 0 0 .5rem;
+}
+
+/* Button hover state */
+.button:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
