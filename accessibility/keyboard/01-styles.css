@@ -1,0 +1,13 @@
+/* Card WORK section */
+.card-work .card-title a {
+  opacity: 0;
+}
+
+.card-work .card-title a:focus {
+  opacity: 1;
+}
+
+.card-work .card-title a:hover {
+  opacity: 1;
+}
+
