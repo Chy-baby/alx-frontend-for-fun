@@ -1,0 +1,100 @@
+/* Existing CSS Code */
+
+/* Flexbox and Grid Layouts */
+.main-article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hero-banner {
+  width: 100%;
+  height: auto;
+}
+
+.aside-section {
+  flex: 1 1 20%;
+}
+
+.main-content {
+  flex: 1 1 75%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-article {
+    flex-direction: column;
+  }
+
+  .aside-section, .main-content {
+    flex: 1 1 100%;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social .social-item {
+  list-style: none;
+}
+
+.footer-social .social-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social .social-link svg {
+  fill: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-menu .nav-item {
+  list-style: none;
+}
+
+.navbar-menu .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+

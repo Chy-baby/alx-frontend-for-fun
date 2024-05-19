@@ -1,0 +1,99 @@
+/* Variables
+============================= */
+:root {
+  --color-dark-grey: #333333;
+  --color-red: #cd3e65;
+  --color-green: #08805b;
+  --text-color: var(--color-dark-grey);
+  --valid-color: var(--color-green);
+  --error-color: var(--color-red);
+}
+
+/* Base styles
+============================= */
+
+/* Form group */
+.form-group {
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--color-white);
+}
+
+/* Focus within state of form group */
+.form-group:focus-within {
+  background-color: var(--color-light-grey);
+  transition: .3s;
+}
+
+/* Form field */
+.form-field-container {
+  position: relative;
+}
+
+.form-field-icon {
+  font-style: normal;
+}
+
+/* Form help */
+.form-help {
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: .019rem;
+  color: var(--color-dark-grey);
+  font-size: var(--font-size-small);
+  max-height: 0;
+  transition: .3s;
+  overflow: hidden;
+}
+
+.form-group:focus-within .form-help {
+  max-height: 20rem;
+  margin: .4rem 0 0;
+}
+
+/* Form error handling
+============================= */
+input:not(:placeholder-shown) ~ .form-field-icon::after {
+  height: 100%;
+  right: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 1.3em;
+}
+
+input:required:invalid:not(:focus):not(:placeholder-shown) ~ .form-field-icon::after {
+  content: '✘';
+  color: var(--error-color);
+}
+
+input:required:valid ~ .form-field-icon::after {
+  content: '✔';
+  color: var(--valid-color);
+}
+
+input:required:valid ~ .form-help {
+  max-height: 0;
+}
+
+input:required:invalid:not(:focus):not(:placeholder-shown),
+textarea:invalid:not(:focus):not(:placeholder-shown) {
+  border: 0.1rem solid var(--error-color);
+}
+
+input:required:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
+  border: 0.1rem solid var(--valid-color);
+}
+
+/* Button styles */
+.button-primary {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.button-primary:hover {
+  color: var(--color-primary);
+  background: var(--color-white);
+}
+

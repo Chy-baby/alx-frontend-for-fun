@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="02-styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="images/logo.png" alt="Techium logo" class="logo">
+        <nav class="navbar">
+          <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <article class="main-article">
+          <header class="hero-banner">
+            <img src="images/hero-banner.jpg" alt="Hero banner">
+          </header>
+          <div class="main-content">
+            <h1>Article Title</h1>
+            <p>Article content goes here...</p>
+          </div>
+          <aside class="aside-section">
+            <h2>Related Articles</h2>
+            <ul>
+              <li><a href="#">Related Article 1</a></li>
+              <li><a href="#">Related Article 2</a></li>
+              <li><a href="#">Related Article 3</a></li>
+            </ul>
+          </aside>
+        </article>
+        <section class="comment-section">
+          <h2>Leave a Comment</h2>
+          <form action="#" method="post">
+            <fieldset>
+              <legend class="visually-hidden">Your personal information</legend>
+              <div class="form-group col-1-2">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group col-1-2">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group col-2-3">
+                <label for="website">Website</label>
+                <input type="url" id="website" name="website">
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend class="visually-hidden">Your comment</legend>
+              <div class="form-group col-2-3">
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="5" required></textarea>
+              </div>
+              <div class="form-group col-2-3">
+                <label for="rating">Rating</label>
+                <input type="number" id="rating" name="rating" min="1" max="5">
+              </div>
+              <div class="form-group">
+                <button type="submit">Submit</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#">
+              <img src="images/logo-black.png" alt="Techium logo" width="160" height="40">
+            </a>
+          </div>
+          <ul class="footer-social nav">
+            <li class="social-item nav-item">
+              <a href="#" class="social-link">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+                  <title>
+                    Facebook icon
+                  </title>
+                  <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item nav-item">
+              <a href="#" class="social-link">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+                  <title>
+                    Twitter icon
+                  </title>
+                  <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.723 9.865 9.865 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.573A4.903 4.903 0 01.964 9.14v.062a4.92 4.92 0 003.946 4.827 4.902 4.902 0 01-2.21.084 4.924 4.924 0 004.597 3.417 9.867 9.867 0 01-6.102 2.104c-.396 0-.788-.023-1.174-.069a13.945 13.945 0 007.557 2.213c9.056 0 14.01-7.507 14.01-14.01 0-.213-.005-.425-.014-.637A10.012 10.012 0 0024 4.557z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item nav-item">
+              <a href="#" class="social-link">
+                <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+                  <title>
+                    LinkedIn icon
+                  </title>
+                  <path d="M19 0h-14c-2.762 0-5 2.238-5 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-11 20h-3v-10h3v10zm-1.5-11.358c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75c.965 0 1.75.785 1.75 1.75s-.784 1.75-1.75 1.75zm13.5 11.358h-3v-5.385c0-1.281-.025-2.929-1.784-2.929-1.784 0-2.057 1.392-2.057 2.833v5.481h-3v-10h2.884v1.367h.041c.401-.757 1.379-1.556 2.838-1.556 3.036 0 3.595 2.004 3.595 4.609v5.58z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <nav class="navbar-menu">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Terms of Service</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer-copyright">
+            © Techium, 2023. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

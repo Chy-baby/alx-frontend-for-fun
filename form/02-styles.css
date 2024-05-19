@@ -1,0 +1,207 @@
+/* Existing CSS Code */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  float: left;
+}
+
+.navbar {
+  float: right;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Article Styles */
+.main-article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hero-banner {
+  width: 100%;
+  height: auto;
+}
+
+.aside-section {
+  flex: 1 1 20%;
+}
+
+.main-content {
+  flex: 1 1 75%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-article {
+    flex-direction: column;
+  }
+
+  .aside-section, .main-content {
+    flex: 1 1 100%;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social .social-item {
+  list-style: none;
+}
+
+.footer-social .social-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social .social-link svg {
+  fill: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-menu .nav-item {
+  list-style: none;
+}
+
+.navbar-menu .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Form Styles */
+.comment-section {
+  margin-top: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* New Fieldset Styles */
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
+  padding: 0 0 2rem 0;
+}
+
+.col-1-2 {
+  flex: 1 1 45%;
+  margin-right: 10%;
+}
+
+.col-2-3 {
+  flex: 1 1 60%;
+  margin-right: 5%;
+}
+
