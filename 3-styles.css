@@ -1,0 +1,64 @@
+/* File: 3-styles.css */
+
+/* Reset default styles */
+body, nav, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the menu container */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333; /* Background color of the menu */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Style for the menu items */
+.menu-item {
+  padding: 0 20px; /* Padding for each item */
+  color: #fff; /* Text color of the items */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Style for the menu open button */
+.menu-open-button {
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Style for the menu lines (hamburger icon) */
+.menu-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #fff; /* Color of the lines */
+  margin-bottom: 5px; /* Spacing between lines */
+  transition: transform 0.3s, opacity 0.3s; /* Transition for animation */
+}
+
+/* Animation for the menu lines when menu is open */
+.menu-open:checked + .menu-open-button .menu-line-1 {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-2 {
+  opacity: 0;
+}
+
+.menu-open:checked + .menu-open-button .menu-line-3 {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Hide the checkbox input */
+.menu-open {
+  display: none;
+}
+

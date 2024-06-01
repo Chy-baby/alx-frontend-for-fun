@@ -1,0 +1,65 @@
+/* File: 2-styles.css */
+
+/* Reset default styles */
+body, div, input, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the toggle container */
+.toggle {
+  position: relative;
+  width: 60px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+}
+
+/* Style for the toggle input */
+.toggle-cb {
+  display: none; /* Hide the default checkbox */
+}
+
+/* Style for the toggle label */
+.toggle-label {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc; /* Background color of the toggle */
+  border-radius: 15px; /* Roundness of the toggle */
+  cursor: pointer;
+}
+
+/* Style for the inner part of the toggle */
+.toggle-inner {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px; /* Width of the inner part */
+  height: 26px; /* Height of the inner part */
+  background-color: #fff; /* Color of the inner part */
+  border-radius: 50%; /* Roundness of the inner part */
+  transition: transform 0.3s; /* Transition for the transform */
+}
+
+/* Style for the toggle switch */
+.toggle-switch {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px; /* Width of the switch */
+  height: 26px; /* Height of the switch */
+  background-color: #333; /* Color of the switch */
+  border-radius: 50%; /* Roundness of the switch */
+  transition: left 0.3s; /* Transition for the left position */
+}
+
+/* Move the switch to the right when the checkbox is checked */
+.toggle-cb:checked + .toggle-label .toggle-inner {
+  transform: translateX(30px); /* Move the inner part to the right */
+}
+
+.toggle-cb:checked + .toggle-label .toggle-switch {
+  left: 32px; /* Move the switch to the right */
+}
+
